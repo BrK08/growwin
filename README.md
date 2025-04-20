@@ -30,8 +30,8 @@ Case Battle, iki oyuncunun aynı tür kasayı açarak çıkan eşyaların **topl
         *Burada oyuncuların toplam eşya değerleri (`k_deger` ve `r_deger`) karşılaştırılarak kazanan belirlenir veya beraberlik ilan edilir.*
 
 *   **Ödeme ve Komisyon:**
-    *   Kazanan oyuncu, her iki oyuncunun açtığı eşyaların **toplam değerini** alır.
-    *   Bu toplam değerden **%5 (`0.05`)** oranında **komisyon** kesilir. Komisyon, toplam eşya değerine göre hesaplanır ve yukarı yuvarlanır (`math.ceil`).
+    *   Kazanan oyuncu, açtığı kasanın değerinin komisyon kesilmiş olarak iki katını alır.
+    *   Bu  değerden **%5 (`0.05`)** oranında **komisyon** kesilir. Komisyon, kasa ücretine  göre hesaplanır ve yukarı yuvarlanır (`math.ceil`).
     *   *Kod Referansı (Komisyon ve Ödeme):*
         ![Case Battle Komisyon Hesaplama](images/cb_komisyon_hesaplama.png)
         *Önce toplam pot (`toplam_deger`), sonra komisyon (`komisyon_miktari`) hesaplanır. Net ödül (`net_odul`) pottan komisyon çıkarılarak bulunur ve kazananın bakiyesine eklenir (`_bakiye_guncelle`).*
